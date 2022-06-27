@@ -1,0 +1,79 @@
+
+#body {
+    background-color: rgb(238, 221, 187);
+}
+
+h1{
+    text-align: center;
+    color:brown;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container{
+  border: 1px solid black;
+  border-radius: 10%;
+  width: 600px;
+  height: 300px;
+  margin: 30px 45% 0 30%;
+  background: rgba(255, 158, 108, 0.85);
+  background: -webkit-linear-gradient(0deg, rgba(255, 158, 108, 0.85) 0%, #ffffff 100%);
+  background: linear-gradient(0deg, rgba(255, 158, 108, 0.85) 0%, #ffffff 100%);
+}
+
+#text{
+  font-size: 2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#textplace {
+  width: 550px;
+  height: 100px;
+  padding: 20px;
+}
+
+q::before,
+q::after {
+    animation: dancing 1s linear infinite;
+    display: inline-block;
+    transform: rotate(5deg);
+}
+
+@keyframes dancing {
+    0% {
+      transform: rotate(13deg) scale(2);
+    }
+    25% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-13deg) scale(2);
+    }
+    75% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(13deg) scale(2);
+    }
+  }
+
+#author{
+    text-align: end;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-right:20px;
+}
+
+#newquote {
+    display: inline-block;
+    margin-left: 20px;
+    width:100px;
+    height:25px;
+    font-size: 17px;
+    background: linear-gradient(0deg, rgba(255, 158, 108, 0.85) 0%, #ffffff 100%);
+}
+
+#newquote:hover{
+  cursor:pointer;
+  width:110px;
+  height:30px;
+  font-size: larger;
+}
