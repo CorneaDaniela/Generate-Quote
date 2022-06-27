@@ -1,0 +1,18 @@
+let counter= 0;
+
+const button = document.getElementById('newquote');
+button.onclick = function() {
+  counter++
+  let arrQuote = ['Ask and it will be given to you; search, and you will find; knock and the door will be opened for you.', 'Life it is not about getting and having, it is about giving and being.', 'If you can dream it, you can achieve it.', 'There is only one way to avoid criticism: do nothing, say nothing, and be nothing.', 'Our lives begin to end the day we become silent about things that matter.', 'The two most important days in your life are the day you are born and the day you find out why.', 'Strive not to be a success, but rather to be of value.'];
+  let arrAuthor = ['Jesus', 'Kevin Kruise', 'Zig Ziglar', 'Aristotle', 'Martin Luther King Jr.', 'Mark Twain', 'Albert Einstein'];
+
+  let newQuote = document.getElementById('text');
+  let newAuthor = document.getElementById('author');
+  // console.log(newQuote.innerText);
+  newQuote.innerText = arrQuote[counter];
+  newAuthor.innerText = arrAuthor[counter];
+
+  if( counter >= arrQuote.length - 1 ) {
+    counter = 0;
+  }
+}
